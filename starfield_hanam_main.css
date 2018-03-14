@@ -1,0 +1,484 @@
+html, body {
+    height: 100%;
+}
+
+body, ul, li, h1, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.top-menu {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top-Wrap {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top-wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.top-wrap>.top-storeList {
+    float: left;
+    width: 33.333%;
+}
+
+.img-box>img {
+    display: block;
+    width: 100%;
+}
+
+.top-wrap>.top-storeList>.img-box {
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-wrap>.top-storeList>.img-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    opacity: 0.5;
+    z-index: 1;
+    display: none;
+}
+
+.top-title {
+    white-space: nowrap;
+    font-size: 1vW;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: block;
+}
+
+.top-wrap>.top-storeList>.img-box:hover::before {
+    display: block;
+}
+
+nav.top-menu>li {
+    position: relative;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.header>.headerLogo>.img-box>img {
+    width: 100%;
+    display: block;
+}
+
+.header>.headerLogo>.img-box {
+    text-align: center;
+    display: block;
+}
+
+/*메뉴바*/
+
+.top-menu {
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+.top-menu>ul>li {
+    position: relative;
+    float: left;
+    width: 14.285%
+}
+
+.top-menu>ul>li>a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2vw;
+    white-space: nowrap;
+}
+
+.top-menu>ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.top-menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 30;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.top-menu li:hover>ul {
+    display: block;
+}
+
+.top-menu ul ul>li>a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    white-space: nowrap;
+    font-size: 1vw;
+}
+
+.top-menu ul>li:hover>a, .top-menu ul ul>li:hover>a {
+    color: red;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*이미지슬라이드*/
+
+#hanam-main-content {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3.0rem;
+    background-image: url(https://www.starfield.co.kr/cdn/starfield_01/bnc/20180222/IM20180222051502440512.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*#hanam-main-content>.slider-1 {
+    width: 80%;
+    left: 10%;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+/*이미지 슬라이드 버튼*/
+/*
+.slider-1 .side-btns>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider-1 .side-btns>div:last-child {
+    left: auto;
+    right: 0;
+}
+
+.slider-1 .side-btns>div>span {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.slider-1 .side-btns>div:last-child>span {
+    left: auto;
+    right: 10px;
+}
+
+/*이미지 슬라이드 */
+/*
+.slider-1 .slides>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.slider-1 .slides>div>img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.slider-1 .slides>div.active {
+    opacity: 1;
+}
+
+.slider-1 .pages {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+}
+
+.slider-1 .pages>div {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.slider-1 .pages>div.active {
+    background-color: white;
+    opacity: 1;
+}
+
+.slider-1::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+*/
+
+/*이미지 슬라이드*/
+
+.page-group {
+    position: relative;
+     margin : 0 auto;
+    max-width : 1200px;
+    height: auto;
+    display: block;
+}
+
+.page-group .pages > div {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.page-group .pages > div.active {
+    opacity: 1;
+}
+
+.page-group .side-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    bottom: 0;
+    z-index: 2;
+    cursor: pointer;
+    background: linear-gradient(to white 50%);
+}
+
+.page-group .side-bar.right {
+    left: auto;
+    right: 0;
+}
+
+.page-group .side-bar i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    opacity: 0;
+    color: #015db2;
+}
+
+.page-group .side-bar.right i {
+    left: auto;
+    right: 10px;
+}
+
+.page-group .side-bar:hover i {
+    opacity: 0.5;
+}
+
+.page-group .side-bar:active i::before {
+    position: relative;
+    top: 2px;
+}
+
+.page-group-custom-1-height {
+    padding-bottom: 45%;
+}
+
+.page-group .pages > div.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.page-group .page-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.page-group .page-buttons > div {
+    width: 4%;
+    height: 4px;
+    background-color: #015db2;
+    display: inline-block;
+    border-radius: 0%;
+    opacity: 0.5;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.page-group .page-buttons > div.active {
+    opacity: 1;
+}
+
+
+/**/
+
+.main-content-02 {
+    padding-top: 100px;
+}
+
+.main-content-02 .event-content {
+    text-align: center;
+}
+
+.event-content h1 {
+    font-size: 5vw;
+    color: black;
+    margin: auto;
+}
+
+.event-content p {
+    color: white;
+    margin-top: 10px;
+    font-size: 2vw;
+}
+
+.main-content-02::after {
+    content: "";
+    display: block;
+    clear: both;
+    padding-bottom: 8vw;
+}
+
+#swypeFieldWrap {
+    background-image: url(https://www.starfield.co.kr/images/hanam/bg_swypeFieldWrap.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.swypeFieldHeader {
+    margin-top: 5vw;
+}
+
+.swypeFieldHeader>h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.swypeFieldHeader>p {
+    color: white;
+}
+
+#swypeFieldWrap>.main {
+  font-family:Arial;
+  max-width:950px;
+  display:block;
+  margin:0 auto;
+}
+#swypeFieldWrap>.main div {
+    line-height: 11vw;
+    margin: 13px;
+    padding: 2%;
+    //padding-bottom : 15px;
+  //box-sizing : border-box;
+    position: relative;
+    text-align: center;
+}
+#swypeFieldWrap>.main div h3{
+  opacity : 0;
+}
+
+
+/* 이벤트 리스트*/
+
+.con {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row {
+    margin-top: 3vW;
+}
+
+.row>.col {
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.row>.col>.img-box {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.row>.col>.img-box>img {
+    width: 100%;
+    display: block;
+    transition: transform 1s;
+}
+.row>.col>.img-box:hover>img{
+    transform: scale(1.2);
+}
+.row>.col>#txtEvent{
+    padding-bottom: 2vw;
+    padding-top :1vw;
+    background-color : aliceblue;
+    padding-left: 1vw;
+    box-sizing: border-box;
+}
+
+
+
+
